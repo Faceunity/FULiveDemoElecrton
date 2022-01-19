@@ -1,0 +1,33 @@
+.virtual-output {
+  width: 100%;
+  height: 100%;
+  overflow: 'hidden';
+  position: relative;
+  & > .properties {
+    p{
+      margin: 0px;
+    }
+    position: absolute;
+    z-index: 5;
+    top: 10px;
+    left: 10px;
+    background: rgba(132, 137, 155, 0.7);
+    width: 130px;
+    height: 45px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  & > .active {
+    height:100px;
+    width: 150px;
+    border-radius: 8px;
+    padding: 5px;
+    .props-control{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

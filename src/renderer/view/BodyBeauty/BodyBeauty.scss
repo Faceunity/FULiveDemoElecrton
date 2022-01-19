@@ -1,0 +1,36 @@
+@import '../../../utils/mixin.scss';
+.body-beauty-root {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  .reset {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px -8px 10px -10px#929090;
+  }
+}
+.body-beauty {
+  height: 84%;
+  overflow: auto;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-bottom: 10px;
+  @include scrollBar(8px, #dcdcdc, #fff);
+    & > .body-beauty-item {
+      display: flex;
+      align-items: center;
+      padding: 15px 0;
+      & > .fu-slider {
+        width: 100%;
+      }
+    }
+    & .fu-button {
+      margin-left: 18px;
+    }
+    .reset {
+      text-align: center;
+    }
+  }
+  

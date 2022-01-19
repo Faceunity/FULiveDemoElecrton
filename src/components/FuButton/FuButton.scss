@@ -1,0 +1,24 @@
+.fu-button {
+  display: inline-block;
+  & > .ant-btn {
+    width: 88px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #959cb4;
+    color: #959cb4;
+    &:hover {
+      background: #f6f6fa;
+    }
+    &:active {
+      background: #d5d5d6;
+    }
+  }
+  & > .ant-btn-primary {
+    background: #7787e9 !important;
+    color: #fff !important;
+  }
+  & > .ant-btn-sm {
+    width: 55px;
+    padding: 0 5px;
+  }
+}

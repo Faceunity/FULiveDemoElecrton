@@ -1,0 +1,56 @@
+// @import '../../../utils/mixin.scss';
+.control-panel {
+  // @include scrollBar(8px, #dcdcdc, #eee);
+
+  border-radius: 5px;
+  height: 100%;
+  // overflow: auto;
+  background: #fff;
+  p {
+    margin: 0;
+  }
+}
+
+.control-panel > .ant-tabs-card .ant-tabs-content {
+  margin-top: -16px;
+}
+.control-panel > .ant-tabs-card .ant-tabs-content > .ant-tabs-tabpane {
+  padding: 16px;
+  background: #fff;
+}
+.control-panel > .ant-tabs-card > .ant-tabs-nav::before {
+  display: none;
+}
+.control-panel > .ant-tabs-card .ant-tabs-nav-list {
+  width: 100%;
+}
+.control-panel > .ant-tabs-card .ant-tabs-tab {
+  flex: 1 0 auto;
+  background: #2d2956;
+  border-color: #2d2956;
+  border-radius: 0px !important;
+  color: #c5c7d9;
+  & > .ant-tabs-tab-btn {
+    margin: 0 auto;
+    &:active {
+      color: #c5c7d9;
+    }
+  }
+}
+.control-panel > .ant-tabs-card .ant-tabs-tab-active {
+  background: #fff;
+  border-color: #fff;
+  & > .ant-tabs-tab-btn {
+    color: #2f3658;
+  }
+}
+
+.control-panel > .ant-tabs {
+  height: 100%;
+  .ant-tabs-content {
+    height: 100%;
+    & > .ant-tabs-tabpane {
+      padding: 16px 0 0 0;
+    }
+  }
+}

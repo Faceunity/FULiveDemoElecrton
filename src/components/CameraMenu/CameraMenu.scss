@@ -1,0 +1,27 @@
+.camera-menu {
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+  & > .camera-select {
+    margin: 0 16px;
+    flex: 0 0 auto;
+  }
+  & > .virtual-switch {
+    margin-left: 32px;
+    flex: 0 0 auto;
+    .ant-checkbox-checked {
+      .ant-checkbox-inner {
+        background-color: #7787e9;
+        border-color: #7787e9;
+      }
+    }
+  }
+  & > .help-world {
+    text-align: right;
+    flex: 1 1 auto;
+    a {
+      text-decoration: underline;
+      color: #2f3658;
+    }
+  }
+}
